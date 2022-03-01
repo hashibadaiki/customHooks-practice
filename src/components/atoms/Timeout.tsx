@@ -1,9 +1,7 @@
 import React from 'react';
 import { useTimeout } from '../../hooks/Timeout';
 
-const test = 'test';
-
-export const Atom = () => {
+export const Timeout = () => {
   const [seconds, setSeconds] = React.useState(0);
   useTimeout(() => {
     setSeconds(seconds + 2);
@@ -11,8 +9,7 @@ export const Atom = () => {
 
   return (
     <div>
-      <div>Atom</div>
-      <div>{test}</div>
+      <div>5秒後に +2 される</div>
       <div>{seconds}</div>
     </div>
   );
