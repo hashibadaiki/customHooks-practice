@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import { Template } from '../components/templates/Template';
 import { css } from '@emotion/react';
 

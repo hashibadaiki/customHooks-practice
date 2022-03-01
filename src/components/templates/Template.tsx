@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import { Molecule } from '../molecules/Molecule';
 
 export const Template = () => {
