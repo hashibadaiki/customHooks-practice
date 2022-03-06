@@ -14,11 +14,12 @@ export const ClickInside = ({ onClickInside }: any) => {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'yellow' }}>
       <h2>ClickInside</h2>
-      <div ref={clickRef}>
+      {/* grayをclickすると反応する */}
+      <div ref={clickRef} style={{ backgroundColor: 'gray' }}>
         <p>click!!</p>
-        <p onClick={test}>noFire</p>
+        <p onClick={test}>test</p>
       </div>
     </div>
   );

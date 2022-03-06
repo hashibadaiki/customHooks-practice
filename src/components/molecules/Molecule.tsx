@@ -2,6 +2,7 @@ import React from 'react';
 import { Atom } from '../atoms/Atom';
 import { ClickInside } from '../atoms/ClickInside';
 import { ClickOutside } from '../atoms/ClickOutside';
+import { InsideTest } from '../atoms/InsideTest';
 import { Previous } from '../atoms/Previous';
 import { Timeout } from '../atoms/Timeout';
 
@@ -25,6 +26,7 @@ export const Molecule = () => {
           clickFunc('outside');
         }}
       />
+      <InsideTest />
     </div>
   );
 };
