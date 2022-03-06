@@ -22,4 +22,4 @@ https://zenn.dev/seya/articles/c908d88df0a587
 
 ## other
 
-We'll add more as they become available.
+https://qiita.com/baby-degu/items/52dbb382bbaf6c43e2db
