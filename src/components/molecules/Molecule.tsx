@@ -1,12 +1,13 @@
 import React from 'react';
 import { Atom } from '../atoms/Atom';
 import { ClickInside } from '../atoms/ClickInside';
+import { ClickOutside } from '../atoms/ClickOutside';
 import { Previous } from '../atoms/Previous';
 import { Timeout } from '../atoms/Timeout';
 
 export const Molecule = () => {
-  const clickInsideFunc = () => {
-    alert('insideClick');
+  const clickFunc = (msg: string) => {
+    console.log(msg);
   };
   return (
     <div>
@@ -14,7 +15,16 @@ export const Molecule = () => {
       <Atom />
       <Timeout />
       <Previous />
-      <ClickInside onClickInside={clickInsideFunc} />
+      <ClickInside
+        onClickInside={() => {
+          clickFunc('inside');
+        }}
+      />
+      <ClickOutside
+        onClickOutside={() => {
+          clickFunc('outside');
+        }}
+      />
     </div>
   );
 };
