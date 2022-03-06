@@ -9,6 +9,7 @@ export const Timeout = () => {
 
   return (
     <div>
+      <h2>SetTime</h2>
       <div>5秒後に +2 される</div>
       <div>{seconds}</div>
     </div>
